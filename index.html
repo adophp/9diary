@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>九宫格</title>
+<link rel="stylesheet" type="text/css" href="./css/diary.css" />
+<script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>
+<script src='./js/jquery.inputlimiter.1.2.1.half.js?v=1.0' type='text/javascript'></script>
+</head>
+
+<body>
+	<div class="main" style="background:#fff;">
+		<div class="box_body" style="font-size:14px;">
+		<h3>PHP九宫格日志---adopphper.com出品</h3>
+		<div id="winmedal-box" style="display:none;">
+			<div id="winmedal-content-border">
+				<span id="winmedal-close" onclick="closeAddCate()">Close</span>
+				<form id="formWinmedal" action="##">
+				<div id="winmedal-content"></div>
+				</form>
+			</div>
+		</div>
+		<div id="app_cnt">
+		<div class="dw_title">
+			<div id="pnl_control" class="fr">
+				<input type="checkbox" id="chkIsPersonal"><label id="lbIsPersonal" for="chkIsPersonal">私密日记</label>
+				<a onclick="showChangeBg()" id="link_change">选择背景</a>
+			</div>
+			日记名称:　<input name="txtTitle" type="text" id="txtTitle" value=""><br><br>
+		</div>
+		<div class="diary">
+		<div id="pnl_weather" title="晴天">
+			<div id="pic_weather_msg"></div>
+		</div>
+		<table id="table_9">
+		  <tr>
+			<td>
+				<div id="lb_title_1" class="lb_title" title="点击可修改哦">开心的事:</div>
+				<textarea id="txt_diary_1"></textarea>
+			</td>
+			<td>
+				<div id="lb_title_2" class="lb_title" title="点击可修改哦">计划\安排\备忘:</div>
+				<textarea id="txt_diary_2"></textarea>
+			</td>
+			<td>
+				<div id="lb_title_3" class="lb_title" title="点击可修改哦">进步与变化:</div>
+				<textarea id="txt_diary_3"></textarea>
+			</td>
+		  </tr>
+		  <tr>
+		   <td>
+				<div id="lb_title_4" class="lb_title" title="点击可修改哦">关注\八卦\新闻:</div>
+				<textarea id="txt_diary_4"></textarea>
+			</td>
+			<td align="center">
+				<div class="fl" style="position:relative; width:180px;">
+						<a href="###" id="link_preDate"></a>
+						<div id="lb_Date" class="lb_title" style="margin-left:0px;cursor:default" title="点击可修改哦"></div>
+						<a href="###" id="link_nextDate"></a>
+					<div>
+					<div id="priview_img" title="点击可切换表情">
+						<div id="pic_priview_msg"></div>
+					</div>
+				</div></div>
+			</td>
+			<td>
+				<div id="lb_title_5" class="lb_title" title="点击可修改哦">有感的一句话:</div>
+				<textarea id="txt_diary_5"></textarea>
+			</td>
+		  </tr>
+		  <tr>
+			<td>
+				<div id="lb_title_6" class="lb_title" title="点击可修改哦">小遗憾:</div>
+				<textarea id="txt_diary_6"></textarea>
+			</td>
+			<td>
+				<div id="lb_title_7" class="lb_title" title="点击可修改哦">健康\饮食\体重:</div>
+				<textarea id="txt_diary_7"></textarea>
+			</td>
+			<td>
+				<div id="lb_title_8" class="lb_title" title="点击可修改哦">明天的愿望:</div>
+				<textarea id="txt_diary_8"></textarea>
+			</td>
+		  </tr>
+		</table>
+		</div><!--end.diary-->
+		<div id="pnl_produce" style="position:relative">
+			<a id="btn_produce" href="###" onclick="doProduce()"></a>
+		</div>
+		<input type="hidden" id="hide_bgId" value="1" />
+		<input name="hide_tempId" type="hidden" id="hide_tempId" value="1" />
+		<input name="hide_today" type="hidden" id="hide_today" value="" />
+		</div>
+		<div id="app_sidebar">
+			<h3>提示</h3>
+			<div class="indent" style="padding-left:0;line-height:30px;color:gray;">
+				背景/天气/表情是可以选择滴哟~<br>
+				<a href="http://adophper.com/" target="_blank" style="color:#ae031c">点击下载</a>
+			</div>
+		</div>
+		</div><!-- end.box_body-->
+		<div class="clear"></div>
+		<div class="footer">
+			<div class="copy">
+				&copy; Copyright 2011-2012 <a href="http://adophper.com/" target="_blank">adophper.com</a> All Rights Reserved.&nbsp;&nbsp;版权所有&nbsp;&nbsp;<a href="http://www.miitbeian.gov.cn" target="_blank">蜀ICP备12031064号</a>
+			</div>
+		</div>
+	</div><!--end.main-->
+<script type="text/javascript" src="./js/9diary.js"></script>
+</body>
+</html>
